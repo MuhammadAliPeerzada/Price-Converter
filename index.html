@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kilogram to rupees Converter</title>
+		<!-- for styling -->
+		<style>
+            input {
+                border-radius: 5px;
+                height: 25px;
+            }
+            body {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+            }
+			span {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Title of your Converter -->
+		<h2 style="color: black;">Kilogram to Rupees Converter</h2>
+		
+<p>The price of chicken is 500rs/kg how much do you want??</p>
+
+
+		
+<p>
+			
+    <label>Kilograms</label>
+
+			<input id="Kilograms"
+				type="number"
+				placeholder="kilograms"
+				oninput="kiloweightConvert(this.value)"
+				onchange="kiloweightConvert(this.value)" />
+		</p>
+
+<p>Price: Rs <span id="Grams">0</span></p>
+
+		<script>
+        			function kiloweightConvert(value) {
+				document.getElementById("Grams").innerHTML =
+				value * 500;
+			}
+		</script>
+	</body>
+</html>
